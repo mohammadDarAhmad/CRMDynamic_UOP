@@ -1,0 +1,80 @@
+﻿@model TASK007.Models.AccountModel
+
+@{
+    Layout = null;
+}
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h4>AccountModel</h4>
+<hr />
+<dl class="dl-horizontal">
+    <dt>
+        @Html.DisplayNameFor(model => model.Name)
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.Name)
+    </dd>
+
+    <dt>
+        @Html.DisplayNameFor(model => model.Revenue)
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.Revenue)
+    </dd>
+
+    <dt>
+        @Html.DisplayNameFor(model => model.Telephone1)
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.Telephone1)
+    </dd>
+
+    <dt>
+        @Html.DisplayNameFor(model => model.IndustryCode)
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.IndustryCode)
+    </dd>
+
+    <dt>
+        @Html.DisplayNameFor(model => model.EMailAddress1)
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.EMailAddress1)
+    </dd>
+
+
+    <dd>
+        @Html.DisplayFor(model => model.OwningUser)
+    </dd>
+
+    <dt>
+        @Html.DisplayNameFor(model => model.AccountNumber)
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.AccountNumber)
+    </dd>
+
+    <dt>
+        @Html.DisplayNameFor(model => model.WebSiteURL)
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.WebSiteURL)
+    </dd>
+
+</dl>
+    </div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
